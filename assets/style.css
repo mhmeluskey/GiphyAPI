@@ -1,0 +1,10 @@
+body {
+  background: url("tiger.jpg") no-repeat center center fixed;
+}
+
+#box {
+  margin: auto;
+  margin-top: 25%;
+  width: 300px;
+  color: black;
+}
