@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Animal GIPHS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -21,19 +21,27 @@
     <script src="assets/app.js"></script>
   </head>
   <body>
-    <!--
-      <label for="inputPassword" class="col-sm-2 col-form-label"
-      >What's your favorite</label>
-    -->
-
     <div class="fluid container">
+      <div id="title">GIPHS</div>
       <div id="box" class="col-sm-12">
-        <input id="input" type="text" class="form-control" id="input" />
-        <button id="submit" type="button" class="btn btn-warning">
-          Submit
-        </button>
+        <div class="card" style="width: 18em;">
+          <p>
+            Type in your favorite animal species to return giphs you can click
+            on to play.
+          </p>
+          <input id="input" type="text" class="form-control" id="input" />
+          <button id="submit" type="button" class="btn btn-warning">
+            Submit
+          </button>
+        </div>
       </div>
     </div>
+    <!-- where the gifs will be appended to once created -->
     <div class="layout"></div>
+
+    <footer id="foot">
+      2018 <a href="https://github.com/mhmeluskey/GiphyAPI">Github Repo</a> |
+      <a href="https://mhmeluskey.github.io/m-mportfolio/">Portfolio</a>
+    </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@ $(document).ready(function() {
     var queryURL =
       "https://api.giphy.com/v1/gifs/search?q=" +
       input +
-      "&api_key=9HWw2KaZlCDRlatDiVSxja1B2XreCRHU&limit=9";
+      "&api_key=9HWw2KaZlCDRlatDiVSxja1B2XreCRHU&limit=12";
 
     console.log(queryURL);
 
@@ -29,20 +29,22 @@ $(document).ready(function() {
       var results = response.data;
       console.log(results);
 
+      //for loop to iterate through animal
       for (var i = 0; i < results.length; i++) {
         var gif =
-          '<img src= " ' +
+          '<div class = "fluid container id = "gif"><img src= " ' +
           response.data[i].images.fixed_height_still.url +
           '" data-still=" ' +
           response.data[i].images.fixed_height_still.url +
           ' " data-animate=" ' +
           response.data[i].images.fixed_height.url +
-          '" data-state="still" class = "animate">';
+          '" data-state="still" class = "animate"> </div';
 
         $(".layout").append(gif);
       } //for
     }); //then
 
+    //function to animate gif on click
     $(document).on("click", ".animate", function() {
       var move = $(this).attr("data-state");
       if (move == "still") {
@@ -54,7 +56,9 @@ $(document).ready(function() {
       } //else
     });
 
-    $("#box").css("margin-top", "5%");
+    // DOM changes after submitting API request
+    $("#box").css("margin-top", "0%");
+    $("#box").css("margin-left", "0%");
     $("#input")
       .on("#input")
       .val("");

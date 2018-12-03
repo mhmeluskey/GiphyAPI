@@ -1,15 +1,49 @@
 body {
   background: url("tiger.jpg") no-repeat center center fixed;
+  background-color: black;
 }
 
 #box {
   margin: auto;
-  margin-top: 25%;
-  width: 300px;
-  color: black;
+  margin-top: 10%;
+  width: 18em;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  background: green;
 }
 
 img {
   float: left;
-  margin: 10px;
+  margin: 1%;
+  height: 100px;
+  width: 100px;
+  border: white solid 5px;
+}
+
+#foot {
+  color: white;
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.btn {
+  margin: auto;
+}
+
+#title {
+  text-shadow: 5px 0px 20px rgba(255, 255, 255),
+    -5px 0px 10px rgba(255, 255, 255);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 6rem;
+  margin: auto;
 }
